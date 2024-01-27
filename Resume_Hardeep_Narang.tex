@@ -1,0 +1,213 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeeItem}[2]{
+  \item\small\justifying{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{5pt}\item[$$]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\vspace{2pt}\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\boldmath$\cdot$}}$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\boldmath$\cdot$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+\begin{center}
+    \textbf{{\LARGE Hardeep (Harry) Narang}}\\[0.08in]
+    {{\faPhone~\small(+91) $<$REDACTED$>$}} $|$
+    \href{mailto:hardeepnarang10@gmail.com}
+    {{\faEnvelope~hardeepnarang10@gmail.com}} $|$
+    \href{https://github.com/hardeepnarang10}{{\faGithub~hardeepnarang10}} $|$
+    \href{https://linkedin.com/in/hardeep10}{{\faLinkedinSquare~hardeep10}}
+    \\
+\end{center}
+
+\vspace{-3pt}
+\section{\textbf{HIGHLIGHTS}}
+\begin{itemize}[leftmargin=8pt]
+\justifying
+\small
+\vspace{3pt}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\boldmath$\cdot$}}$}
+\item Engineered multiple production-ready distributed backend systems spanning 100s of microservices in Go and Python.
+\vspace{-6pt}
+\item Designed and developed a majority of TotalityCorp’s backend, leading to 1.3M USD in funding, and an early promotion.
+\vspace{-6pt}
+\item Setup and managed the entirety of TotalityCorp's cloud infrastructure across AWS and GCP. Administered Kubernetes clusters.
+\vspace{-6pt}
+\vspace{-11pt}
+\item 3+ YoE. Pragmatic problem solver. I bring business value by engineering sophisticated solutions that solve specific problems.
+\end{itemize}
+\vspace{-5pt}
+
+\section{\textbf{EXPERIENCE}}
+  \resumeSubHeadingListStart
+    \vspace{0pt}
+    \resumeSubheading{\href{}{Totality Corp Pvt. Ltd.}}{\textbf{Jun '21 - Jan '24}}
+    {Software Engineer II $|$ Software Engineer I}{Remote, India}
+      \resumeItemListStart
+        \resumeeItem{}{Designed, developed, and maintained 100s of high-performance gRPC and REST APIs across various GenAI and Web3 projects.}
+          \vspace{-11pt}
+        \resumeeItem{}{Setup cloud infrastructure on AWS and GCP. Potential candidate for best governance nomination by GCP partner team.}
+        \resumeeItem{}{Administered Kubernetes Clusters. Built CI/CD pipelines. Wrote CRDs and Operators for managing AI/ML workloads.}
+        \resumeeItem{}{Engineered multiple events and data-driven distributed systems architecture. Decomposed several monoliths to microservices.}
+        \resumeeItem{}{Designed multiple database and cache schemas based on known and projected requirements and access patterns.}
+        \resumeeItem{}{Authored 40+ systems development and usage documentations and wikis. Defined code contribution and testing guidelines.}
+        \resumeeItem{}{Set up and managed application security based on modern governance principles of zero-knowledge and zero-trust.}
+        \resumeeItem{}{Wrote code contribution and testing guidelines. Authored multiple systems development, usage documentations and wikis.}
+        \resumeeItem{}{Interviewed, onboarded and led a team of 4 engineers in extending application capabilities. Reviewed PRs.}
+      \resumeItemListEnd
+    \resumeSubheading{\href{}{Cognizant Technology Solutions India Pvt. Ltd.}}{\textbf{Dec '20 - Jun '21}}
+    {Programmer Analyst Trainee}{Remote, India}
+    \resumeItemListStart
+        \resumeeItem{}{Prototyped low-level system design for an online product marketplace using AWS serverless stack.}
+        \resumeeItem{}{Graduated advanced communications and behavior training with a 9/10 assessment score band.}
+      \resumeItemListEnd
+    \vspace{-4pt}
+\resumeSubHeadingListEnd
+\vspace{5pt}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+ 
+\vspace{0pt}
+
+\section{\textbf{PROJECTS}}
+  \resumeSubHeadingListStart
+    \resumeSubheading{\href{https://zuno.bytebanter.com}{{\faLink~Zuno: More than just a URL Shortener}}}{\textbf{Nov '23}}
+    {Stack: Go, gRPC, OpenAPI, MySQL, Redis, OpenTelemetry, Grafana Stack, Jaeger, Envoy, Kubernetes.}{}
+      \resumeItemListStart
+        \vspace{-4pt}
+        \resumeeItem{}{Implemented a production-ready, highly performant link-shortener application backend spanning 40+ microservices.}
+        \vspace{-4pt}
+        \resumeeItem{}{Achieved average API response time of 22.5ms across all APIs. Benchmarked against 1k RPS on a single t3.medium instance.}
+        \vspace{-4pt}
+        \vspace{-11pt}
+        \resumeeItem{}{Features custom API definition format functioning as the source of truth, encompassing all aspects of defining the APIs.}
+        \vspace{-4pt}
+        \resumeeItem{}{Integrated complete application observability at every layer of each of the services: reports logging, request tracing and metrics.}
+        \vspace{-4pt}
+        \vspace{-11pt}
+        \resumeeItem{}{Implemented Google AIPs in the API design, usage, implementation and documentation. Implemented detailed error reporting.}
+        \vspace{-4pt}
+        \vspace{-11pt}
+        \resumeeItem{}{\textit{Personal Note: I've distilled the best of my experience, knowledge, and engineering discipline into this one project.}}
+        \vspace{-4pt}
+      \resumeItemListEnd
+    \vspace{-4pt}
+    \resumeSubheading{\href{https://github.com/hardeepnarang10/logscope}{{\faLink~Logscope: Distributed Log Aggregator}}}{\textbf{Sep '23}}
+    {Stack: Go, Python, Elasticsearch, NATS, OpenAPI, Docker.}{}
+      \resumeItemListStart
+        \vspace{-4pt}
+        \resumeeItem{}{Built a highly-performant and scalable proof-of-concept log aggregator system featuring fully functional log ingestion and search.}
+        \vspace{-4pt}
+        \vspace{-11pt}
+        \resumeeItem{}{Implemented high-throughput (order of 10\textsuperscript{5}) log ingestion, and sub-millisecond search capabilities.}
+        \vspace{-4pt}
+        \resumeeItem{}{Added support for multi-field ranked search, and advanced search with highly customizable, regex-enabled filters.}
+        \vspace{-4pt}
+      \resumeItemListEnd
+    \vspace{-4pt}
+    \resumeSubheading{\href{https://github.com/hardeepnarang10/pandora}{{\faLink~Pandora: Container Runtime Engine}}}{\textbf{Jul '23}}
+    {Stack: Go, Bash, Linux, Syscalls, Namespaces, Cgroups, Networking.}{}
+      \resumeItemListStart
+        \vspace{-4pt}
+        \resumeeItem{}{Developed a non-privileged Linux container engine in Go using only system calls and no external dependencies.}
+        \vspace{-4pt}
+        \resumeeItem{}{Leveraged Linux Kernel and Network Namespaces, and Control Groups to achieve process isolation and resource restriction.}
+      \resumeItemListEnd
+    \vspace{-4pt}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{2pt}
+
+\section{\hspace{-3pt}\textbf{EDUCATION}}
+\vspace{3pt}
+\hspace{0pt}
+\textbf{M.R.S. Punjab Technical University, Punjab, India}
+\vspace{1pt}
+\hfill
+\textbf{Aug '16 - Oct '20} \\
+\hspace{0pt}
+Bachelor of Technology (B.Tech) $|$ Computer Science Engineering
+\hfill
+\\
+\vspace{5pt}
+\hspace{0pt}
+\textbf{Army Public School, Allahabad, India}
+\vspace{1pt}
+\hfill
+\textbf{Apr '14 - Mar '16} \\
+\hspace{0pt}
+Physics, Chemistry, Mathematics (PCM) $|$ Computer Science
+\hfill
+\\
+
+\vspace{5pt}
+
+\section{\textbf{SKILLS}}
+    \renewcommand{\labelitemi}{}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages/Frameworks}{Go (Golang), Python, MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch, gRPC, Kafka, NATS.}
+        \vspace{-11pt}
+	\resumeSubItem{Tools/Technologies}{AWS, GCP, Linux, Kubernetes, Docker, Terraform, Ansible, ArgoCD, Github Actions, Serverless.}
+	\resumeSubItem{Concepts/Experiences}{Distributed and Federated Systems. Systems and API design, Data Schema Design. Observability via Logging, Tracing, Metrics, and Profiling, Systems and Process Automation, Decomposition, Continuous Integration/Delivery.}
+
+\end{document}
